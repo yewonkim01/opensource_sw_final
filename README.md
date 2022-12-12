@@ -1,4 +1,4 @@
-# Brain Tumor Classification
+# Brain Tumor Classification with sklearn
 This project aims to find the ***Best Machine Learning model*** to fit the **Brain Tumor data** points using Scikit-Learn.
 
 ## Training dataset
@@ -24,7 +24,8 @@ Here's a description of VotingClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
 
-**< Hyper-parameters >**
+## Hyper-parameters
+
 
 1. **RandomForestClsassifier**
 - n_estimators=30
@@ -37,6 +38,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassif
 Here's a description of RandomForestClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
+
 2. **ExtraTreesClassifier**
 - n_estimators=65
 - max_depth=30
@@ -48,6 +50,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestC
 Here's a description of ExtraTreesClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html
 
+
 3. **RidgeClassifier**
 - alpha=0.34
 
@@ -55,8 +58,8 @@ Here's a description of RidgeClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 
 
-# Contact
+## Contact
 kyw9791@naver.com
 
-# License
+## License
 This project uses the following license : MIT
