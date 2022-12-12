@@ -19,7 +19,8 @@ This project used ***VotingClassifier*** algorithm with
 3. **RidgeClassifier**
 
 ***VotingClassifier*** used default parameters.
-Check the default parameters in here.
+
+Here's a description of VotingClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
 
@@ -32,7 +33,8 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassif
 - max_features=3
 - n_jobs=-1
 - random_state=2742
-Check default parameters in here.
+
+Here's a description of RandomForestClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
 2. **ExtraTreesClassifier**
@@ -42,10 +44,19 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestC
 - min_samples_split=3
 - n_jobs=-1
 - random_state=3438
-Check default parameters in here.
+
+Here's a description of ExtraTreesClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html
 
 3. **RidgeClassifier**
 - alpha=0.34
-Check default parameters in here.
+
+Here's a description of RidgeClassifier and parameters.
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+
+
+# Contact
+kyw9791@naver.com
+
+# License
+This project uses the following license : MIT
