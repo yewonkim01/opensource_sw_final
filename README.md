@@ -19,6 +19,8 @@ This project used ***VotingClassifier*** algorithm with
 3. **RidgeClassifier**
 
 ***VotingClassifier*** used default parameters.
+Check the default parameters in here.
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
 
 **< Hyper-parameters >**
@@ -30,6 +32,8 @@ This project used ***VotingClassifier*** algorithm with
 - max_features=3
 - n_jobs=-1
 - random_state=2742
+Check default parameters in here.
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
 2. **ExtraTreesClassifier**
 - n_estimators=65
@@ -38,6 +42,10 @@ This project used ***VotingClassifier*** algorithm with
 - min_samples_split=3
 - n_jobs=-1
 - random_state=3438
+Check default parameters in here.
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html
 
 3. **RidgeClassifier**
 - alpha=0.34
+Check default parameters in here.
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
