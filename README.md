@@ -1,6 +1,7 @@
 # Brain Tumor Classification with sklearn
 This project aims to find the ***Best Machine Learning model*** to fit the **Brain Tumor data** points using Scikit-Learn.
 
+# Congifuration instructions
 ## Training dataset
 Training dataset has MRIs of following classes.
 1. giloma_tumor
@@ -14,52 +15,73 @@ Training dataset has MRIs of following classes.
 
 ## Model used
 This project used ***VotingClassifier*** algorithm with
-1. **RandomForestClassifier**
-2. **ExtraTreesClassifier**
+1. **ExtraTreesClassifier**
+2. **KNeighborsClassifier**
 3. **RidgeClassifier**
-
-***VotingClassifier*** used default parameters.
-
-Here's a description of VotingClassifier and parameters.
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
 
 ## Hyper-parameters
 
 
-1. **RandomForestClsassifier**
-- n_estimators=30
-- class_weight='balanced'
-- max_depth=23
-- max_features=3
-- n_jobs=-1
-- random_state=2742
-
-Here's a description of RandomForestClassifier and parameters.
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-
-
-2. **ExtraTreesClassifier**
-- n_estimators=65
+1. **ExtraTreesClsassifier**
+- n_estimators=100
 - max_depth=30
-- max_features=1
+- max_features=3
 - min_samples_split=3
 - n_jobs=-1
-- random_state=3438
+- random_state=1774
 
-Here's a description of ExtraTreesClassifier and parameters.
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html
+```python
+et = ExtraTreesClassifier(n_estimators = 100,
+                          max_depth = 30,
+                          max_features = 1,
+                          min_samples_split = 3,
+                          n_jobs = -1,
+                          random_state = 1774)
+```
+
+
+
+2. **KNeighborsClassifier**
+- n_neighbors=1
+
+```python
+knn = KNeighborsClassifier(n_neighbors= 1)
+```
+
+
 
 
 3. **RidgeClassifier**
 - alpha=0.34
 
-Here's a description of RidgeClassifier and parameters.
-https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+```python
+rg = RidgeClassifier(alpha = 0.32)
+```
 
 
-## Contact
-kyw9791@naver.com
+## Final model
+***VotingClassifier*** used default parameters.
+~~~python
+vote = VotingClassifier(estimators = [('et', et),
+                                      ('knn', knn),
+                                      ('rg', rg)])
 
-## License
+vote.fit(X_train, y_train)
+y_pred = vote.predict(X_test)
+~~~
+
+# Operating instructions
+Please run from the top.
+
+I attached the pickle file. Please run the file.
+
+
+# License
 This project uses the following license : MIT
+
+
+# Contact
+yewon kim
+
+e-mail : kyw9791@naver.com
