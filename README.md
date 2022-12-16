@@ -26,7 +26,7 @@ This project used ***VotingClassifier*** algorithm with
 1. **ExtraTreesClsassifier**
 - n_estimators=100
 - max_depth=30
-- max_features=3
+- max_features=1
 - min_samples_split=3
 - n_jobs=-1
 - random_state=1774
