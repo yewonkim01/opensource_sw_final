@@ -53,7 +53,7 @@ knn = KNeighborsClassifier(n_neighbors= 1)
 
 
 3. **RidgeClassifier**
-- alpha=0.34
+- alpha=0.32
 
 ```python
 rg = RidgeClassifier(alpha = 0.32)
