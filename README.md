@@ -1,7 +1,7 @@
 # Brain Tumor Classification with sklearn
 This project aims to find the ***Best Machine Learning model*** to fit the **Brain Tumor data** points using Scikit-Learn.
 
-# Congifuration instructions
+# Configuration instructions
 ## Training dataset
 Training dataset has MRIs of following classes.
 1. giloma_tumor
